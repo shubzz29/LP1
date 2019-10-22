@@ -1,0 +1,5 @@
+To run the program, run the following commands
+
+	>>>	g++  -std=c++11 -fopenmp merge.cpp -o omp2
+	>>>	export OMP_NUM_THREADS=100
+	>>>	./omp2

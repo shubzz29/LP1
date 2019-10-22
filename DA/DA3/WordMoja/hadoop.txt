@@ -1,0 +1,21 @@
+bc.txt
+Wordcount.java
+
+include jar files from build->configure build->Add External jar
+External jar->hadoop->commom-> all jars
+	     ->hadoop->commom->lib-> cli jar
+	     hadoop->commom->mapreduce -> app & common & core jars
+Export JarFile 
+Next 
+Zavazava.jar  //dont change path
+
+
+jps   // to check weather hadoop is on
+start-all.sh 
+jps
+hadoop fs -mkdir innFile
+hadoop fs -put bc.txt innFile
+hadoop fs -mkdir 
+hadoop jar Zavazava.jar package1.WordCount innfile ofile
+hadoop fs -ls ofile
+hadoop fs -cat ofile/part-r-0000  ///File location specified above
